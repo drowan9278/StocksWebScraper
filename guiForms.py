@@ -9,6 +9,19 @@ class Startup:
 
         self.greet_button = Button(master,text="Welcome", command=self.greet)
         self.greet_button.pack()
+        choices =[
+
+            "Microsft",
+            "AMD",
+            "Nvidia"
+        ]
+        tkvar = StringVar(root)
+        tkvar.set(choices[0])
+        self.dropDown = OptionMenu(master,tkvar,*choices)
+        self.dropDown.pack()
+
+
+
 
         self.close_button = Button(master, text="Exit", command = master.quit)
         self.close_button.pack()
