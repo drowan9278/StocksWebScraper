@@ -1,0 +1,14 @@
+Amazon
+Google
+Bell
+General Electric
+Dell
+HP
+Toshiba
+Intel
+AMD
+Nvidia
+Perdue
+Honda
+Chevy
+Ford
