@@ -4,6 +4,7 @@ class Startup:
         print("Starting startup form")
         self.master = master
         master.title("StockReviewer")
+        master.iconbitmap(self,"logo.ico")
         self.label = Label(master, text="Welcome To StockReviews")
         self.label.grid(column =0,row=0,sticky =W)
         self.greet_button = Button(master,text="Update Selection", command=self.greet)
@@ -24,12 +25,12 @@ class Startup:
         self.companySelect.grid(row=2, column=0)
 
 
-    def stockGraph(self):
+    def stockgraph(self):
         return
     def greet(self):
         print("Updated")
         self.companySelect.config(text = "Current Selection: " +self.companyList.get('active'))
-        self.showStockGraph = Button(self.master, text="Show Current Stock Graph")
+        self.showStockGraph = Button(self.master, text="Show Current Stock Graph", command =  self.stockgraph())
         self.showStockGraph.grid(row=3,column = 0)
     def grabData(self):
         data = []
